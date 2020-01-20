@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { ProductContext } from "../context/productContent";
 
 const Item = props => {
-  const { removeItem } = useContext(ProductContext);
+  const { removeItem, addItem } = useContext(ProductContext);
   return (
     <div className="shopping-cart_item">
       <img src={props.image} alt={`${props.title} book`} />
